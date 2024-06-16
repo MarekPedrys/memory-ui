@@ -3,4 +3,14 @@
     <ng-icon name="heroArrowLeft"></ng-icon>
   </a>
 
+  <div class="flex flex-col gap-2">
+    <div class="flex items-center gap-4" *ngFor="let c of categories">
+      <div class="white-list-item">{{c}}</div>
+      <button>
+        <ng-icon name="heroNoSymbol"></ng-icon>
+      </button>
+    </div>
+  </div>
+
+
 </div>
