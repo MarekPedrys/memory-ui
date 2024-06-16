@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {NgIcon} from "@ng-icons/core";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-categories',
@@ -9,11 +9,13 @@ import {NgForOf} from "@angular/common";
   imports: [
     RouterLink,
     NgIcon,
-    NgForOf
+    NgForOf,
+    NgIf
   ],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.css'
 })
 export class CategoriesComponent {
-  categories: string[] = ['Owoce', 'Zwierzęta']
+  categories: string[] = []
+  // categories: string[] = ['Owoce', 'Zwierzęta']
 }
